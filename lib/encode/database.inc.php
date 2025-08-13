@@ -1,0 +1,1 @@
+<?php if (!defined('ACCESS')) die('Not access'); else $databases = array('db_host' => '14.225.198.8', 'db_username' => 'root', 'db_password' => '0000000000--', 'db_name' => 'nro_data', 'is_auto' => false); ?>
