@@ -56,7 +56,8 @@ include 'config.php';
                 
 
 <?php
-if($user){
+// Kiểm tra biến $user trước khi sử dụng
+if(isset($user) && $user){
 echo'<font color="green">Tài khoản: </font><b><font color="red">'.$user['username'].'</b> </font> |<font color="green"> Số dư hiện tại: </font><b><font color="red">'.number_format($user['vnd']).'đ </b> </font>
 
 <br><br>

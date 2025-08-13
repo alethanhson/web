@@ -11,6 +11,9 @@ RUN apt-get update && apt-get install -y \
 # Bật mod rewrite cho Apache
 RUN a2enmod rewrite
 
+# Sửa lỗi ServerName warning
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 # Cài đặt Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
